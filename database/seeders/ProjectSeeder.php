@@ -17,12 +17,12 @@ class ProjectSeeder extends Seeder
 	 */
 	public function run(Faker $faker)
 	{
-		for ($i = 0; $i < 10; $i++) {
-			$project = new Project;
-			$project->title = $faker->catchPhrase();
-			$project->content = $faker->paragraphs(2, true);
-			$project->slug = Str::slug($project->title);
-			$project->save();
-		}
+		// for ($i = 0; $i < 10; $i++) {
+		$project = new Project;
+		$project->title = 'Vite Boolando';
+		$project->content = 'Create un nuovo progetto utilizzando Vite e Vue 3 e definite i componenti necessari per strutturare il layout.';
+		$project->link = 'https://github.com/lucapolzone/vite-boolando';
+		$project->save();
+		// }
 	}
 }
