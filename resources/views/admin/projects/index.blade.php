@@ -20,7 +20,7 @@
                             <td>{{ $project->title }}</td>
                             <td>{{ $project->content }}</td>
                             <td>
-                                <a href="{{ $project->link }}" target="_blank">Dettagli progetto</a>
+                                <a href="{{ $project->link }}" target="_blank">Dettagli</a>
                             </td>
                         </tr>
 
