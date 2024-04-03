@@ -20,7 +20,8 @@
                             <td>{{ $project->title }}</td>
                             <td>{{ $project->content }}</td>
                             <td>
-                                <a href="{{ $project->link }}" target="_blank">Dettagli</a>
+                                {{-- <a href="{{ $project->link }}" target="_blank">Dettagli</a> --}}
+                                <a href="{{ route('admin.projects.show', $project) }}">Dettagli</a>
                             </td>
                         </tr>
 
